@@ -9,6 +9,7 @@
 /dist
 /tags
 *.mo
+*.log
 
 # IDE and editor specific files #
 #################################
@@ -28,3 +29,9 @@
 Icon?
 ehthumbs.db
 Thumbs.db
+
+# 設定ファイル
+############
+app/Config/config.php
+app/Config/rashoumon_database.php
+get_instagram/config.php
