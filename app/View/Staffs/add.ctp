@@ -13,14 +13,13 @@
 		echo $this->Form->input('store_id',array('label' => '店舗名'));
 		echo $this->Form->input('sort',array('label' => '表示優先度'));
 		echo $this->Form->input('reserve_url',array('label' => '予約URL'));
-		//echo $this->Form->input('picture',array('label' => '写真'));
 		echo $this->Form->input('picture', array('label' => '写真', 'type' => 'file', 'multiple'));
 		echo $this->Form->input('profile',array('label' => 'プロフィール'));
 		echo $this->Form->input('schedule' , array(
+								'label' => 'スケジュール',
     							'type' => 'select' ,
     							'multiple' => 'checkbox',
     							'options' =>  array('0'=>'日','1' => '月', '2' => '火', '3'=> '水', '4' => '木', '5'=>'金', '6'=> '土'),
-    							//'selected' => explode(',', $staff['Staff']['schedule']),
     							'div' => false,
 								));
 		echo $this->Form->input('memo',array('label' => '備考'));

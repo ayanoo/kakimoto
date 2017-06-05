@@ -4,14 +4,10 @@
 	<thead>
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
-			<th><?php echo $this->Paginator->sort('username'); ?></th>
-			<th><?php echo $this->Paginator->sort('store_id'); ?></th>
-			<th><?php echo $this->Paginator->sort('password'); ?></th>
-			<th><?php echo $this->Paginator->sort('hint'); ?></th>
-			<th><?php echo $this->Paginator->sort('admin_flg'); ?></th>
-			<th><?php echo $this->Paginator->sort('created'); ?></th>
-			<th><?php echo $this->Paginator->sort('modified'); ?></th>
-			<th><?php echo $this->Paginator->sort('del_flg'); ?></th>
+			<th><?php echo $this->Paginator->sort('ユーザーネーム'); ?></th>
+			<th><?php echo $this->Paginator->sort('店舗名'); ?></th>
+			<th><?php echo $this->Paginator->sort('ヒント'); ?></th>
+			<th><?php echo $this->Paginator->sort('権限'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	</thead>
@@ -20,13 +16,9 @@
 	<tr>
 		<td><?php echo h($user['User']['id']); ?>&nbsp;</td>
 		<td><?php echo h($user['User']['username']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['store_id']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['password']); ?>&nbsp;</td>
+		<td><?php echo h($user['Store']['name']); ?>&nbsp;</td>
 		<td><?php echo h($user['User']['hint']); ?>&nbsp;</td>
 		<td><?php echo h($user['User']['admin_flg']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['created']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['modified']); ?>&nbsp;</td>
-		<td><?php echo h($user['User']['del_flg']); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $user['User']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $user['User']['id'])); ?>

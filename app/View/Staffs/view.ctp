@@ -61,13 +61,11 @@
 			<?php 
 			echo $this->Html->image($staff['Staff']['picture'], array('width'=>'200px','height'=>'auto'));
 			?>
-			<?php //echo h($staff['Staff']['picture']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('スケジュール'); ?></dt>
 		<dd>
 			<?php echo $this->Common->getScheduleDay($staff['Staff']['schedule']); ?>
-			<?php //echo h($staff['Staff']['schedule']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('備考'); ?></dt>
@@ -75,24 +73,19 @@
 			<?php echo h($staff['Staff']['memo']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Update User'); ?></dt>
+		<dt><?php echo __('更新ユーザー'); ?></dt>
 		<dd>
 			<?php echo h($staff['Staff']['update_user']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Created'); ?></dt>
+		<dt><?php echo __('作成日'); ?></dt>
 		<dd>
 			<?php echo h($staff['Staff']['created']); ?>
 			&nbsp;
 		</dd>
-		<dt><?php echo __('Modified'); ?></dt>
+		<dt><?php echo __('更新日'); ?></dt>
 		<dd>
 			<?php echo h($staff['Staff']['modified']); ?>
-			&nbsp;
-		</dd>
-		<dt><?php echo __('Del Flg'); ?></dt>
-		<dd>
-			<?php echo h($staff['Staff']['del_flg']); ?>
 			&nbsp;
 		</dd>
 	</dl>
